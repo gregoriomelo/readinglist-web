@@ -13,12 +13,12 @@ test('index renders', function(){
   expect(3);
 
   visit('/').then(function(){
-    var title = find('h2#title');
-    var list = find('ul li');
+    var title = find('header>h1');
+    var list = find('ul#readinglist li');
 
-    equal(title.text(), 'Welcome to Ember.js');
+    equal(title.text(), 'Reading List');
 
     equal(list.length, 3);
-    equal(list.text(), 'redyellowblue');
+    equal(list.text(), 'Pragmatic ProgrammerContinuous DeliveryDatabases and Agility');
   });
 });

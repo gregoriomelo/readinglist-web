@@ -6,7 +6,6 @@ moduleForModel('book', 'Book model');
 test("Book is a valid ember-data model", function() {
   var book = this.subject({title: "TDD by Example", isRead: false});
   ok(book);
-  ok(false);
   ok(book instanceof DS.Model);
   ok(book instanceof Book);
 });
