@@ -10,7 +10,7 @@ module('Acceptances - Index', {
 });
 
 test('index renders', function(){
-  expect(3);
+  expect(5);
 
   visit('/').then(function(){
     var title = find('header>h1');
@@ -18,7 +18,9 @@ test('index renders', function(){
 
     equal(title.text(), 'Reading List');
 
+    ok(list.text().indexOf('Pragmatic Programmer') >= 0);
+    ok(list.text().indexOf('Continuous Delivery') >= 0);
+    ok(list.text().indexOf('Databases and Agility') >= 0);
     equal(list.length, 3);
-    equal(list.text(), 'Pragmatic ProgrammerContinuous DeliveryDatabases and Agility');
   });
 });

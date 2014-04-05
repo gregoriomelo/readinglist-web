@@ -1,5 +1,9 @@
-<ul  id="readinglist">
-{{#each}}
-  <li>{{this.title}}</li>
-{{/each}}
+<ul id="readinglist">
+  {{#each}}
+  <li>
+    <input type="checkbox" class="toggle" />
+    <label>{{title}}</title>
+    <button class="destroy" />
+  </li>
+  {{/each}}
 </ul>
