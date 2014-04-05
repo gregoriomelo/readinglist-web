@@ -9,7 +9,7 @@ Book.reopenClass({
     {
       id: 1,
       title: "Pragmatic Programmer",
-      isRead: false,
+      isRead: true,
       isStarred: false
     },
     {

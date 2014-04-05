@@ -1,6 +1,6 @@
 <ul id="readinglist">
   {{#each}}
-  <li>
+  <li {{bind-attr class="isRead:completed"}}>
     <input type="checkbox" class="toggle" />
     <label>{{title}}</title>
     <button class="destroy" />
