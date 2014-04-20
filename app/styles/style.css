@@ -109,7 +109,7 @@ body {
 	border-top-right-radius: 1px;
 }
 
-#new-todo,
+#new-book,
 .edit {
 	position: relative;
 	margin: 0;
@@ -135,7 +135,7 @@ body {
 	font-smoothing: antialiased;
 }
 
-#new-todo {
+#new-book {
 	padding: 16px 16px 16px 60px;
 	border: none;
 	background: rgba(0, 0, 0, 0.02);
@@ -347,7 +347,7 @@ label[for='toggle-all'] {
 				0 44px 2px -6px rgba(0, 0, 0, 0.2);
 }
 
-#todo-count {
+#book-count {
 	float: left;
 	text-align: left;
 }
